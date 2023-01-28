@@ -1,0 +1,4 @@
+service fm-hal-aidl /system/bin/vendor.samsung_ext.hardware.fmradio-service
+    class hal
+    user root
+    group root

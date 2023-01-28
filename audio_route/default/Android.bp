@@ -1,0 +1,22 @@
+cc_binary {
+    name: "vendor.samsung_ext.hardware.audio_route-service",
+    srcs: [
+        "AudioRoute.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+        "liblog",
+        "libutils",
+        "audioflinger-aidl-cpp",
+        "libaudiofoundation",
+        "libaudioutils",
+        "libaudioclient",
+        "libaudiomanager",
+        "vendor.samsung_ext.hardware.audio_route-V1-ndk",
+    ],
+    header_libs: ["libaudioclient_headers"],
+    init_rc: ["vendor.samsung_ext.hardware.audio_route-service.rc"],
+    vintf_fragments: ["vendor.samsung_ext.hardware.audio_route.xml"],
+}

@@ -1,0 +1,6 @@
+<manifest version="1.0" type="framework">
+   <hal format="aidl">
+       <name>vendor.samsung_ext.hardware.audio_route</name>
+       <fqname>IAudioRoute/default</fqname>
+   </hal>
+</manifest>

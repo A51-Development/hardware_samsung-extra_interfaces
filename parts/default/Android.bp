@@ -1,0 +1,24 @@
+//
+// Copyright (C) 2023 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+cc_binary {
+    name: "vendor.samsung_ext.hardware.parts-service",
+    relative_install_path: "hw",
+    init_rc: ["vendor.samsung_ext.hardware.parts-service.rc"],
+    vintf_fragments: ["vendor.samsung_ext.hardware.parts-service.xml"],
+    srcs: [
+        "RamPlus.cpp",
+	"SmartCharge.cpp",
+	"SysfsControl.cpp",
+        "service.cpp",
+    ],
+    shared_libs: [
+        "libbase",
+        "libbinder_ndk",
+	"libfileio",
+        "vendor.samsung_ext.hardware.parts-V1-ndk",
+    ],
+}

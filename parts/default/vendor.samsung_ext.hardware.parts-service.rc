@@ -1,0 +1,5 @@
+service vendor.parts-default /vendor/bin/hw/vendor.samsung_ext.hardware.parts-service
+    class hal
+    user nobody
+    group nobody
+    shutdown critical

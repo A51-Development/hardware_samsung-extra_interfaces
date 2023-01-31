@@ -1,0 +1,20 @@
+aidl_interface {
+    name: "vendor.samsung_ext.hardware.parts",
+    srcs: ["vendor/samsung_ext/hardware/parts/*.aidl"],
+    stability: "vintf",
+    backend: {
+        ndk: {
+            enabled: true,
+        },
+        java: {
+            platform_apis: true,
+        },
+    },
+    versions_with_info: [
+        {
+            version: "1",
+            imports: [],
+        },
+    ],
+
+}

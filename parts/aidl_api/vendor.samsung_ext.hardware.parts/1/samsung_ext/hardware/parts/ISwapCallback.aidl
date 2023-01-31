@@ -15,6 +15,6 @@
 package vendor.samsung_ext.hardware.parts;
 
 @VintfStability
-interface IBoolCallback {
+interface ISwapCallback {
 	void respondToBool(in boolean result);
 }

@@ -14,18 +14,13 @@
 
 package vendor.samsung_ext.hardware.parts;
 
-import vendor.samsung_ext.hardware.parts.IBoolCallback;
+import vendor.samsung_ext.hardware.parts.ISwapCallback;
 
 @VintfStability
-interface ISwapOnData {
-
+interface IRamPlus {
     boolean isMutexLocked();
 
-    oneway void removeSwapFile();
+    oneway void setSwapStatus(in boolean on, in ISwapCallback cb);
 
-    oneway void setSwapOff();
-
-    oneway void setSwapOn(in IBoolCallback cb);
-
-    oneway void makeSwapFile(in int size);
+    oneway void setSwapFileStatus(in boolean make, in int size);
 }

@@ -14,10 +14,13 @@
 
 package vendor.samsung_ext.hardware.parts;
 
-import vendor.samsung_ext.hardware.parts.SysfsType;
+import vendor.samsung_ext.hardware.parts.ISwapCallback;
 
 @VintfStability
-interface ISysfsControl {
-	void write(in SysfsType type, in String value);
-	String read(in SysfsType type);
+interface IRamPlus {
+    boolean isMutexLocked();
+
+    oneway void setSwapStatus(in boolean on, in ISwapCallback cb);
+
+    oneway void setSwapFileStatus(in boolean make, in int size);
 }

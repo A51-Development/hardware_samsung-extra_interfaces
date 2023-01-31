@@ -1,5 +1,6 @@
 #include <android-base/file.h>
 
+#define LOG_TAG "libFileIO"
 #include <LogFormat.h>
 
 namespace FileIO {

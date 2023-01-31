@@ -14,7 +14,7 @@ cc_binary {
         "libaudioutils",
         "libaudioclient",
         "libaudiomanager",
-        "vendor.samsung_ext.hardware.audio_route-V1-ndk",
+        "vendor.samsung_ext.hardware.audio_route-ndk",
     ],
     header_libs: ["libaudioclient_headers"],
     init_rc: ["vendor.samsung_ext.hardware.audio_route-service.rc"],

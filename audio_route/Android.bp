@@ -1,17 +1,10 @@
 aidl_interface {
     name: "vendor.samsung_ext.hardware.audio_route",
     srcs: ["vendor/samsung_ext/hardware/audio_route/*.aidl"],
-    stability: "vintf",
+    unstable: true,
     backend: {
         ndk: {
             enabled: true,
         },
     },
-    versions_with_info: [
-        {
-            version: "1",
-            imports: [],
-        },
-    ],
-
 }

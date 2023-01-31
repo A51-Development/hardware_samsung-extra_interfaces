@@ -14,7 +14,6 @@
 
 package vendor.samsung_ext.hardware.audio_route;
 
-@VintfStability
 interface IAudioRoute {
     oneway void setParam(String param);
 }

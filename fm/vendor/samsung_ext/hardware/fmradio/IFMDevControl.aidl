@@ -17,7 +17,6 @@ package vendor.samsung_ext.hardware.fmradio;
 import vendor.samsung_ext.hardware.fmradio.GetType;
 import vendor.samsung_ext.hardware.fmradio.SetType;
 
-@VintfStability
 interface IFMDevControl {
     oneway void open();
 

@@ -15,7 +15,6 @@
 package vendor.samsung_ext.hardware.fmradio;
 
 @Backing(type="int")
-@VintfStability
 enum GetType {
    GET_TYPE_FM_FREQ,
    GET_TYPE_FM_UPPER_LIMIT,

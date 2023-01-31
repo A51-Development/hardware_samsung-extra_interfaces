@@ -15,7 +15,6 @@
 package vendor.samsung_ext.hardware.fmradio;
 
 @Backing(type="int")
-@VintfStability
 enum SetType {
     SET_TYPE_FM_FREQ,
     SET_TYPE_FM_MUTE,

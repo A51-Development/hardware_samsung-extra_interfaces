@@ -1,7 +1,7 @@
 aidl_interface {
     name: "vendor.samsung_ext.hardware.fmradio",
     srcs: ["vendor/samsung_ext/hardware/fmradio/*.aidl"],
-    stability: "vintf",
+    unstable: true,
     backend: {
         ndk: {
             enabled: true,
@@ -10,20 +10,4 @@ aidl_interface {
             platform_apis: true,
         },
     },
-    versions_with_info: [
-        {
-            version: "1",
-            imports: [],
-        },
-        {
-            version: "2",
-            imports: [],
-        },
-        {
-            version: "3",
-            imports: [],
-        },
-
-    ],
-
 }

@@ -23,8 +23,8 @@ cc_binary {
         "libbinder_ndk",
         "liblog",
         "libfileio",
-        "vendor.samsung_ext.hardware.fmradio-V3-ndk",
-        "vendor.samsung_ext.hardware.audio_route-V1-ndk",
+        "vendor.samsung_ext.hardware.fmradio-ndk",
+        "vendor.samsung_ext.hardware.audio_route-ndk",
     ],
     header_libs: [
         "libaudioclient_headers",
